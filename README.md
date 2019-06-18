@@ -9,6 +9,11 @@ Motivation
 
 Aside from the motivation of wanting to complete the capstone project for the Udacity Data Science Nano degree, I chose to work on this project because I enjoy working on business problems.
 
+Files in the repo
+
+Starbucks_Capstone_notebook.ipynb - this is the main notebook where work was done starting out. It includes a function that generates labels on the dataset and a classifier that tries to fit on the dataset and predict.  There are two versions. One on the master branch and one in the branch 'ult-wide'
+
+Starbucks-Prophet- an alternative approach using Facebook's Prophet to predict how certain demographic groups will behave.
 
 Dependencies
 The main unusual dependency is Facebook’s prophet. (‘pip install fbprophet’)
@@ -24,3 +29,4 @@ numpy
 pandas
 Sklearn
 Datetime
+matplotlib
