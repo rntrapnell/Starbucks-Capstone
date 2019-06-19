@@ -47,5 +47,11 @@ Beyond that it requires some elements pretty standard for Python/Data Science
 numpy
 pandas
 Sklearn
+<<<<<<< HEAD
 Datetime
 matplotlib
+||||||| merged common ancestors
+Datetime
+=======
+Datetime
+>>>>>>> Prophet-labels
