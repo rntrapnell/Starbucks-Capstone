@@ -9,6 +9,25 @@ Motivation
 
 Aside from the motivation of wanting to complete the capstone project for the Udacity Data Science Nano degree, I chose to work on this project because I enjoy working on business problems.
 
+Problem and solution
+
+The goal of the project is to assign which customers should receive which offers based upon demographic data. The offers contain various thresholds of money spent (how much must be spent to receive the reward) and varying rewards as well.
+
+Beyond that and the demographic data, all we have is the time series data. We have no information on why each offer was sent and no direct method for evaluating which offers worked.
+
+The eventual solution involved multiple steps and machine learning approaches. Briefly outlined the solution used was:
+
+1)Pull data from influence periods and label transactions as influenced for time series analysis.
+2)Find offer completions not recorded as influenced because they were unviewed. 3)Create 'No' labels based on these.
+4)Cluster the customer data with K Means.
+5)Run Facebook's Prophet forecasting on  the clusters.
+6)Pull effect data from the Prophet forecast to create more labels.
+7)Train and test a RandomForestClassifier on the labels to create a model that can predict whether we would want a customer to receive an offer.
+
+The final classifier was able to predict labels with around 70-80% (and sometimes up to 85%) precision.
+
+For more about the development of the solution and the final result check out the blog post about it <a href=https://medium.com/@rntrapnell/predicting-customer-behavior-with-starbucks-data-351312682e2b>here</a>
+
 Files in the repo
 
 Starbucks_Capstone_notebook.ipynb - this is the main notebook where work was done starting out. It includes a function that generates labels on the dataset and a classifier that tries to fit on the dataset and predict.  There are two versions. One on the master branch and one in the branch 'ult-wide'
